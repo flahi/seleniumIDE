@@ -51,5 +51,4 @@ registerForm.addEventListener("submit", function(event) {
   successMessage.textContent = `User account created`;
   errorMessage.textContent = "";
   registerForm.reset();
-  window.location.href ="created.html";
 });
