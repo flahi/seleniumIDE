@@ -5,32 +5,39 @@
     <link rel="stylesheet" type="text/css" href="style.css">
   </head>
   <body>
-    <div class="head">
-      <h1>User Login Creation</h1>
+    <div class="main">
+      <div class="container">
+        <h1>User Login Creation</h1>
+        <form id="register-form">
+          <div>
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username">
+          </div>
+          <div>
+            <label for="email">Email</label>
+            <input type="text" id="email" name="email">
+          </div>
+          <div>
+            <label for="mobile">Mobile</label>
+            <input type="text" id="mobile" name="mobile">
+          </div>
+          <div>
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password">
+          </div>
+          <div>
+            <label for="confirm-password">Confirm Password</label>
+            <input type="password" id="confirm-password" name="confirm-password">
+          </div>
+          <div class="error-message" id="error-message"></div>
+          <button type="submit">Create Account</button>
+        </form>
+        <div class="success-message" id="success-message"></div>
+      </div>
     </div>
-    <div class="container">
-      <form id="register-form">
-        <div>
-          <label for="username">Username</label>
-          <input type="text" id="username" name="username" required>
-        </div>
-        <div>
-          <label for="email">Email</label>
-          <input type="text" id="email" name="email" required>
-        </div>
-        <div>
-          <label for="password">Password</label>
-          <input type="password" id="password" name="password" required>
-        </div>
-        <div>
-          <label for="confirm-password">Confirm Password</label>
-          <input type="password" id="confirm-password" name="confirm-password" required>
-        </div>
-        <div class="error-message" id="error-message"></div>
-        <button type="submit">Create Account</button>
-      </form>
-      <div class="success-message" id="success-message"></div>
-    </div>
+    <footer>
+      <p>This website is created for the sole purpose of testing, and nothing else.</p>
+    </footer>
     <script src="script.js"></script>
   </body>
 </html>
